@@ -6,6 +6,7 @@ extends CharacterBody2D
 @export var gravity : float = 500
 @export var jumpforce : float = 200
 
+@export var health : int = 3 
 var move_input : float 
 
 @onready var sprite :Sprite2D = $Sprite
@@ -30,7 +31,7 @@ func _physics_process(delta):
 	
 	move_and_slide()
 
-func _process(delta):
+func _process(_delta):
 	if velocity.x != 0:
 		sprite.flip_h = velocity.x > 0
 	
@@ -42,4 +43,17 @@ func _manage_animation ():
 	elif move_input != 0:
 		anim.play("move")
 	else:
-		anim.play("idle")
+		anim.play("Idle")
+
+func take_damage (amount : int):
+	health -= amount
+	
+	if health <= 0: 
+		call_deferred("game_over")
+
+func game_over ():
+	get_tree().change_scene_to_file("res://Scenes/level_1.tscn")
+
+func increase_score (amount : int):
+	PlayerStats.score += amount
+	print(PlayerStats.score	)
