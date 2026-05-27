@@ -59,8 +59,8 @@ script = ExtResource("1_jtv8s")
 
 [node name="BackgroundSprite" type="Sprite2D" parent="Background" unique_id=2115558518]
 modulate = Color(1, 1, 0.72156864, 1)
-position = Vector2(306, -197)
-scale = Vector2(1.5914522, 1.879747)
+position = Vector2(289, -195.00002)
+scale = Vector2(1.8306527, 1.8924053)
 texture = ExtResource("2_jtv8s")
 
 [node name="BackgroundSprite5" type="Sprite2D" parent="Background" unique_id=2086968704]
