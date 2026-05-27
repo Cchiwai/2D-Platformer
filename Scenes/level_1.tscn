@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=4 uid="uid://ds75lvm8eqf4l"]
+[gd_scene format=4 uid="uid://ds75lvm8eqf4l"]
 
 [ext_resource type="Texture2D" uid="uid://daddmg1hkc27d" path="res://Sprites/Backgrounds/backgroundForest.png" id="1_8ffim"]
 [ext_resource type="Script" uid="uid://cqstwyomlhbod" path="res://Scripts/background_parrallax.gd" id="1_chwpn"]
@@ -52,118 +52,115 @@ _data = {
 &"fly": SubResource("Animation_wrinw")
 }
 
-[node name="Main" type="Node2D"]
+[node name="Main" type="Node2D" unique_id=1010993917]
 
-[node name="Background" type="Node2D" parent="."]
+[node name="Background" type="Node2D" parent="." unique_id=1147961953]
 script = ExtResource("1_chwpn")
 
-[node name="BackgroundSprite" type="Sprite2D" parent="Background"]
+[node name="BackgroundSprite" type="Sprite2D" parent="Background" unique_id=713732564]
 position = Vector2(6, -133)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("1_8ffim")
 
-[node name="BackgroundSprite2" type="Sprite2D" parent="Background"]
+[node name="BackgroundSprite2" type="Sprite2D" parent="Background" unique_id=117445789]
 position = Vector2(512, -133)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("1_8ffim")
 
-[node name="BackgroundSprite3" type="Sprite2D" parent="Background"]
+[node name="BackgroundSprite3" type="Sprite2D" parent="Background" unique_id=1108145866]
 position = Vector2(1024, -136)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("1_8ffim")
 
-[node name="BackgroundSprite4" type="Sprite2D" parent="Background"]
+[node name="BackgroundSprite4" type="Sprite2D" parent="Background" unique_id=1295319292]
 position = Vector2(-505, -133)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("1_8ffim")
 
-[node name="BackgroundSprite5" type="Sprite2D" parent="Background"]
+[node name="BackgroundSprite5" type="Sprite2D" parent="Background" unique_id=449978892]
 position = Vector2(-1017, -134)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("1_8ffim")
 
-[node name="TileMapLayer" type="TileMapLayer" parent="."]
-scale = Vector2(0.8297535, 1)
-tile_map_data = PackedByteArray("AAD+/wAAAAACAAEAAAD//wAAAAACAAEAAAAAAAAAAAACAAEAAAABAAAAAAACAAEAAAD+/wEAAAACAAYAAAD//wEAAAACAAYAAAAAAAEAAAACAAYAAAABAAEAAAACAAYAAAD+/wIAAAACAAYAAAD//wIAAAACAAYAAAAAAAIAAAACAAYAAAABAAIAAAACAAYAAAAEAAEAAAACAAYAAAAFAAEAAAACAAYAAAAGAAEAAAACAAYAAAAHAAEAAAACAAYAAAAKAAIAAAACAAYAAAAKAAMAAAACAAYAAAAEAAAAAAACAAEAAAAFAAAAAAACAAEAAAAGAAAAAAACAAEAAAAHAAAAAAACAAEAAAAKAAEAAAACAAEAAAAOAAIAAAACAAEAAAASAAIAAAACAAEAAAAWAAIAAAACAAEAAAAaAAAAAAACAAEAAAAbAAAAAAACAAEAAAAcAAAAAAACAAEAAAAdAAAAAAACAAEAAAAhAP//AAACAAEAAAAiAP//AAACAAEAAAAjAP//AAACAAEAAAAkAP//AAACAAEAAAAlAP//AAACAAEAAAAqAP//AAACAAEAAAArAP//AAACAAEAAAAsAP//AAACAAEAAAAtAP//AAACAAEAAAAuAP//AAACAAEAAAAOAAMAAAACAAYAAAAOAAQAAAACAAYAAAASAAMAAAACAAYAAAASAAQAAAACAAYAAAAWAAMAAAACAAYAAAAaAAEAAAACAAYAAAAaAAIAAAACAAYAAAAbAAIAAAACAAYAAAAcAAIAAAACAAYAAAAdAAIAAAACAAYAAAAdAAEAAAACAAYAAAAcAAEAAAACAAYAAAAbAAEAAAACAAYAAAAhAAAAAAACAAYAAAAhAAEAAAACAAYAAAAiAAEAAAACAAYAAAAjAAEAAAACAAYAAAAkAAEAAAACAAYAAAAlAAEAAAACAAYAAAAlAAAAAAACAAYAAAAkAAAAAAACAAYAAAAjAAAAAAACAAYAAAAiAAAAAAACAAYAAAAcAAMAAAACAAYAAAAbAAMAAAACAAYAAAAaAAMAAAACAAYAAAAdAAMAAAACAAYAAAAdAAQAAAACAAYAAAAcAAQAAAACAAYAAAAbAAQAAAACAAYAAAAaAAQAAAACAAYAAAAqAAAAAAACAAYAAAArAAAAAAACAAYAAAAsAAAAAAACAAYAAAAtAAAAAAACAAYAAAAuAAAAAAACAAYAAAAuAAEAAAACAAYAAAAtAAEAAAACAAYAAAAsAAEAAAACAAYAAAArAAEAAAACAAYAAAAqAAEAAAACAAYAAAAvAAAAAAACAAYAAAAwAAAAAAACAAYAAAAwAAEAAAACAAYAAAAvAAEAAAACAAYAAAAvAP//AAACAAEAAAAwAP//AAACAAEAAAAhAAIAAAACAAYAAAAiAAIAAAACAAYAAAAjAAIAAAACAAYAAAAkAAIAAAACAAYAAAAlAAIAAAACAAYAAAA=")
+[node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=978012931]
+tile_map_data = PackedByteArray("AAD+/wAAAAABAAEAAAD//wAAAAACAAEAAAAAAAAAAAACAAEAAAABAAAAAAADAAEAAAD+/wEAAAABAAYAAAD//wEAAAACAAYAAAAAAAEAAAACAAYAAAABAAEAAAADAAYAAAD+/wIAAAABAAcAAAD//wIAAAACAAcAAAAAAAIAAAACAAcAAAABAAIAAAADAAcAAAAEAAEAAAABAAcAAAAFAAEAAAACAAcAAAAGAAEAAAACAAcAAAAHAAEAAAADAAcAAAAKAAIAAAACAAYAAAAKAAMAAAACAAYAAAAEAAAAAAABAAEAAAAFAAAAAAACAAEAAAAGAAAAAAACAAEAAAAHAAAAAAADAAEAAAAKAAEAAAACAAEAAAAOAAIAAAACAAEAAAASAAIAAAACAAEAAAAWAAIAAAACAAEAAAAaAAAAAAACAAEAAAAbAAAAAAACAAEAAAAcAAAAAAACAAEAAAAdAAAAAAACAAEAAAAhAP//AAACAAEAAAAiAP//AAACAAEAAAAjAP//AAACAAEAAAAkAP//AAACAAEAAAAlAP//AAACAAEAAAAqAP//AAACAAEAAAArAP//AAACAAEAAAAsAP//AAACAAEAAAAtAP//AAACAAEAAAAuAP//AAACAAEAAAAOAAMAAAACAAYAAAAOAAQAAAACAAcAAAASAAMAAAACAAYAAAASAAQAAAACAAcAAAAWAAMAAAACAAcAAAAaAAEAAAACAAYAAAAaAAIAAAACAAYAAAAbAAIAAAACAAYAAAAcAAIAAAACAAYAAAAdAAIAAAACAAYAAAAdAAEAAAACAAYAAAAcAAEAAAACAAYAAAAbAAEAAAACAAYAAAAhAAAAAAACAAYAAAAhAAEAAAACAAYAAAAiAAEAAAACAAYAAAAjAAEAAAACAAYAAAAkAAEAAAACAAYAAAAlAAEAAAACAAYAAAAlAAAAAAACAAYAAAAkAAAAAAACAAYAAAAjAAAAAAACAAYAAAAiAAAAAAACAAYAAAAcAAMAAAACAAYAAAAbAAMAAAACAAYAAAAaAAMAAAACAAYAAAAdAAMAAAACAAYAAAAdAAQAAAACAAcAAAAcAAQAAAACAAcAAAAbAAQAAAACAAcAAAAaAAQAAAACAAcAAAAqAAAAAAACAAYAAAArAAAAAAACAAYAAAAsAAAAAAACAAYAAAAtAAAAAAACAAYAAAAuAAAAAAACAAYAAAAuAAEAAAACAAcAAAAtAAEAAAACAAcAAAAsAAEAAAACAAcAAAArAAEAAAACAAcAAAAqAAEAAAACAAcAAAAvAAAAAAACAAYAAAAwAAAAAAACAAYAAAAwAAEAAAACAAcAAAAvAAEAAAACAAcAAAAvAP//AAACAAEAAAAwAP//AAACAAEAAAAhAAIAAAACAAcAAAAiAAIAAAACAAcAAAAjAAIAAAACAAcAAAAkAAIAAAACAAcAAAAlAAIAAAACAAcAAAA=")
 tile_set = ExtResource("1_vk57k")
 
-[node name="Player" parent="." instance=ExtResource("3_xfk5q")]
+[node name="Player" parent="." unique_id=734323729 instance=ExtResource("3_xfk5q")]
 
-[node name="Coins" type="Node" parent="."]
+[node name="Coins" type="Node" parent="." unique_id=1207070403]
 
-[node name="Coin" parent="Coins" instance=ExtResource("8_xrdnt")]
+[node name="Coin" parent="Coins" unique_id=1474821661 instance=ExtResource("8_xrdnt")]
 position = Vector2(89, -7)
 
-[node name="Coin2" parent="Coins" instance=ExtResource("8_xrdnt")]
+[node name="Coin2" parent="Coins" unique_id=150237591 instance=ExtResource("8_xrdnt")]
 position = Vector2(158, 9)
 
-[node name="Coin3" parent="Coins" instance=ExtResource("8_xrdnt")]
+[node name="Coin3" parent="Coins" unique_id=1676574774 instance=ExtResource("8_xrdnt")]
 position = Vector2(216, 27)
 
-[node name="Coin4" parent="Coins" instance=ExtResource("8_xrdnt")]
+[node name="Coin4" parent="Coins" unique_id=1069159963 instance=ExtResource("8_xrdnt")]
 position = Vector2(276, 25)
 
-[node name="Coin5" parent="Coins" instance=ExtResource("8_xrdnt")]
+[node name="Coin5" parent="Coins" unique_id=2145670750 instance=ExtResource("8_xrdnt")]
 position = Vector2(337, 24)
 
-[node name="Coin6" parent="Coins" instance=ExtResource("8_xrdnt")]
+[node name="Coin6" parent="Coins" unique_id=788459788 instance=ExtResource("8_xrdnt")]
 position = Vector2(422, -7)
 
-[node name="Coin7" parent="Coins" instance=ExtResource("8_xrdnt")]
+[node name="Coin7" parent="Coins" unique_id=88241012 instance=ExtResource("8_xrdnt")]
 position = Vector2(531, -26)
 
-[node name="Enemies" type="Node" parent="."]
+[node name="Enemies" type="Node" parent="." unique_id=2109253285]
 
-[node name="Enemy" type="Area2D" parent="Enemies"]
+[node name="Enemy" type="Area2D" parent="Enemies" unique_id=184470348]
 position = Vector2(45, 11)
 script = ExtResource("4_6444e")
 move_direction = Vector2(0, -50)
 
-[node name="Sprite" type="Sprite2D" parent="Enemies/Enemy"]
+[node name="Sprite" type="Sprite2D" parent="Enemies/Enemy" unique_id=1708638136]
 texture = ExtResource("5_evi0p")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Enemies/Enemy"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Enemies/Enemy" unique_id=505114154]
 shape = SubResource("CircleShape2D_lsmp6")
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="Enemies/Enemy"]
-libraries = {
-&"": SubResource("AnimationLibrary_af3po")
-}
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Enemies/Enemy" unique_id=757047519]
+libraries/ = SubResource("AnimationLibrary_af3po")
 
-[node name="Enemy2" type="Area2D" parent="Enemies"]
+[node name="Enemy2" type="Area2D" parent="Enemies" unique_id=1698669756]
 position = Vector2(135, 26)
 script = ExtResource("4_6444e")
 move_direction = Vector2(0, -50)
 
-[node name="Sprite" type="Sprite2D" parent="Enemies/Enemy2"]
+[node name="Sprite" type="Sprite2D" parent="Enemies/Enemy2" unique_id=135574613]
 texture = ExtResource("5_evi0p")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Enemies/Enemy2"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Enemies/Enemy2" unique_id=466299946]
 shape = SubResource("CircleShape2D_lsmp6")
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="Enemies/Enemy2"]
-libraries = {
-&"": SubResource("AnimationLibrary_af3po")
-}
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Enemies/Enemy2" unique_id=1915601123]
+libraries/ = SubResource("AnimationLibrary_af3po")
 
-[node name="Enemy3" type="Area2D" parent="Enemies"]
+[node name="Enemy3" type="Area2D" parent="Enemies" unique_id=1660507409]
 position = Vector2(190, 44)
 script = ExtResource("4_6444e")
 move_direction = Vector2(0, -50)
 
-[node name="Sprite" type="Sprite2D" parent="Enemies/Enemy3"]
+[node name="Sprite" type="Sprite2D" parent="Enemies/Enemy3" unique_id=1068236562]
 texture = ExtResource("5_evi0p")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Enemies/Enemy3"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Enemies/Enemy3" unique_id=1490237388]
 shape = SubResource("CircleShape2D_lsmp6")
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="Enemies/Enemy3"]
-libraries = {
-&"": SubResource("AnimationLibrary_af3po")
-}
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Enemies/Enemy3" unique_id=1029540093]
+libraries/ = SubResource("AnimationLibrary_af3po")
 
-[node name="EndFlag" parent="." instance=ExtResource("9_wrinw")]
-position = Vector2(686, -26)
+[node name="EndFlag" parent="." unique_id=298285009 instance=ExtResource("9_wrinw")]
+position = Vector2(824, -28)
+scene_to_load = ExtResource("11_af3po")
+
+[node name="EndFlag" parent="EndFlag" unique_id=1888930411 instance=ExtResource("9_wrinw")]
+position = Vector2(-911, 104)
 scene_to_load = ExtResource("11_af3po")
 
 [connection signal="body_entered" from="Enemies/Enemy" to="Enemies/Enemy" method="_on_body_entered"]

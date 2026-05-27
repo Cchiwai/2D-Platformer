@@ -1,7 +1,7 @@
-[gd_scene load_steps=4 format=3 uid="uid://cw7lp67vp5x13"]
+[gd_scene format=3 uid="uid://cw7lp67vp5x13"]
 
-[ext_resource type="Texture2D" uid="uid://daddmg1hkc27d" path="res://Sprites/Backgrounds/backgroundForest.png" id="1_1rerr"]
 [ext_resource type="Script" uid="uid://ckm20ddnrw0kc" path="res://Scripts/menu.gd" id="1_xhh6f"]
+[ext_resource type="Texture2D" uid="uid://b043wj61lchfp" path="res://Sprites/Backgrounds/bit-pixel-art-mexican-desert-game-landscape-sand-dunes-background-vector-nostalgic-western-videogame-arcade-level-sunset-370774595.webp" id="2_xhh6f"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_xhh6f"]
 font_size = 48
@@ -11,7 +11,7 @@ outline_color = Color(0, 0, 0, 1)
 shadow_size = 4
 shadow_color = Color(0, 0, 0, 0.9607843)
 
-[node name="Menu" type="Control"]
+[node name="Menu" type="Control" unique_id=1142930117]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -24,16 +24,15 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_xhh6f")
 
-[node name="Background" type="TextureRect" parent="."]
+[node name="Background" type="TextureRect" parent="." unique_id=405818600]
 layout_mode = 0
-offset_left = -33.0
-offset_top = -289.0
-offset_right = 1228.0
-offset_bottom = 972.0
-texture = ExtResource("1_1rerr")
-expand_mode = 4
+offset_left = -116.0
+offset_top = -429.0
+offset_right = 1255.0
+offset_bottom = 714.0
+texture = ExtResource("2_xhh6f")
 
-[node name="Title" type="Label" parent="."]
+[node name="Title" type="Label" parent="." unique_id=90067516]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -51,7 +50,7 @@ label_settings = SubResource("LabelSettings_xhh6f")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="PlayButton2" type="Button" parent="."]
+[node name="PlayButton2" type="Button" parent="." unique_id=1530705579]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -68,7 +67,7 @@ text = "Quit
 
 "
 
-[node name="PlayButton" type="Button" parent="."]
+[node name="PlayButton" type="Button" parent="." unique_id=909512812]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
