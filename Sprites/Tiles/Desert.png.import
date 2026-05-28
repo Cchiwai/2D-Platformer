@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ciy8ptp1oywut"
-path="res://.godot/imported/Temple Asset Pack.png-a23e2828c1a24bd793631cb4ca78dedd.ctex"
+uid="uid://mmyvoicmxbq5"
+path="res://.godot/imported/Desert.png-14eb0125ae10251536b9916b18b76d6e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Abandoned Desert - v1.0/Abandoned Desert - v1.0/Temple/Temple Asset Pack.png"
-dest_files=["res://.godot/imported/Temple Asset Pack.png-a23e2828c1a24bd793631cb4ca78dedd.ctex"]
+source_file="res://Sprites/Tiles/Desert.png"
+dest_files=["res://.godot/imported/Desert.png-14eb0125ae10251536b9916b18b76d6e.ctex"]
 
 [params]
 
