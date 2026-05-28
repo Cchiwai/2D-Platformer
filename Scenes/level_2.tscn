@@ -162,7 +162,7 @@ shape = SubResource("CircleShape2D_lsmp6")
 libraries/ = SubResource("AnimationLibrary_af3po")
 
 [node name="EndFlag" parent="." unique_id=1389499104 instance=ExtResource("10_i6dbo")]
-position = Vector2(-54, 63)
+position = Vector2(-72, 68)
 scene_to_load = ExtResource("11_t7v2y")
 
 [node name="EndFlag2" parent="." unique_id=910315594 instance=ExtResource("10_i6dbo")]

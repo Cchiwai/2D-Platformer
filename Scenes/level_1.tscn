@@ -129,7 +129,7 @@ shape = SubResource("CircleShape2D_lsmp6")
 libraries/ = SubResource("AnimationLibrary_af3po")
 
 [node name="Enemy2" type="Area2D" parent="Enemies" unique_id=1698669756]
-position = Vector2(135, 26)
+position = Vector2(162, 39)
 script = ExtResource("4_6444e")
 move_direction = Vector2(0, -50)
 
@@ -143,7 +143,7 @@ shape = SubResource("CircleShape2D_lsmp6")
 libraries/ = SubResource("AnimationLibrary_af3po")
 
 [node name="Enemy3" type="Area2D" parent="Enemies" unique_id=1660507409]
-position = Vector2(190, 44)
+position = Vector2(226, 53)
 script = ExtResource("4_6444e")
 move_direction = Vector2(0, -50)
 

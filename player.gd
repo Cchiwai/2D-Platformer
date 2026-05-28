@@ -47,7 +47,7 @@ func _physics_process(delta):
 
 func _process(_delta):
 	if velocity.x != 0:
-		sprite.flip_h = velocity.x > 0
+		sprite.flip_h = velocity.x < 0
 	
 	if global_position.y > 220:
 		game_over()
